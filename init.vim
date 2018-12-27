@@ -26,17 +26,13 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
-Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'airblade/vim-gitgutter' 
 Plug 'tpope/vim-dispatch'
 Plug 'nazo/pt.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'ervandew/supertab'
-Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-tmux'
-Plug 'ncm2/ncm2-path'
 call plug#end()
 
 colorscheme gruvbox
@@ -61,7 +57,6 @@ let mapleader="\<space>"
 nmap <leader>; A;<esc>
 nmap <leader>sv :source $MYVIMRC<cr>
 nmap <leader>ev :vsplit $MYVIMRC<cr>
-nmap <c-P> :Files<cr>
 nmap <c-F> :Pt<space>
 
 let g:python3_host_prog = '/usr/local/bin/python3'
